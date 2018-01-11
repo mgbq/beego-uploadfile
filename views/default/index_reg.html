@@ -1,0 +1,21 @@
+{{template "default/header2.html" .}}
+<style>
+	.sign{
+		margin-top:10%;
+	}
+</style>
+<div class="sign container col-md-4 col-md-offset-4">
+	<h3>用户注册</h3>
+	<form class="form-signin" action="/index/doreg" method="post" >
+		<p><input type="text" name="username" class="form-control" placeholder="用户名"></p>
+		<p><input type="text" name="password" class="form-control" placeholder="密码"></p>
+		<p>
+			<input type="submit" value="确定" class="btn btn-primary">
+			<span></span>
+			<a href="/index/index" class="btn btn-info">返回</a>
+		</p>
+	</form>
+</div>
+<br/>
+
+{{template "default/footer.html" .}}

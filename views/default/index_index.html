@@ -1,0 +1,21 @@
+{{template "default/header2.html" .}}
+<style>
+	.sign{
+		margin-top:10%;
+	}
+</style>
+<div class="sign container col-md-4 col-md-offset-4">
+	<h3>uploadfile-客户管理系统</h3>
+	<form class="form-signin" action="/index/login" method="post" >
+		<p><input type="text" name="username" class="form-control" placeholder="用户名"></p>
+		<p><input type="password" name="password" class="form-control" placeholder="密码"></p>
+		<p>
+			<input type="submit" value="确定" class="btn btn-primary">
+			<span></span>
+			<a href="/index/reg" class="btn btn-info">注册</a>
+		</p>
+	</form>
+</div>
+<br/>
+
+{{template "default/footer.html" .}}
