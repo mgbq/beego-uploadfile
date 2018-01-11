@@ -1,0 +1,32 @@
+{{template "default/header.html" .}}
+	<div class="lead">编辑用户</div>
+	<form action="/user/update" method="post">
+	<input type="hidden" name="id" value="{{.result._id|hex}}">
+	<table class="table table-bordered">
+		<tr>
+			<td>用户名称</td>
+			<td>
+				<input type="text" name="username" class="form-control" value="{{.result.username}}">
+			</td>
+		</tr>
+		<tr>
+			<td>用户密码</td>
+			<td>
+				<input type="text" name="password" class="form-control" value="{{.result.password}}">
+			</td>
+		</tr>
+		<tr>
+			<td>用户组</td>
+			<td>
+				<input type="text" name="group" class="form-control" value="{{.result.group}}">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" class="btn btn-primary" value="保存">
+				<input type="reset" class="btn" value="重置">
+			</td>
+		</tr>
+	</table>
+	</form>
+{{template "default/footer.html" .}}

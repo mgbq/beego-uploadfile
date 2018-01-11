@@ -1,0 +1,8 @@
+{{template "default/header.html" .}}
+	<div class="lead">文件上传</div>
+<form id="fform" action="/file/Upload" method="post" enctype="multipart/form-data">
+   		<input id="myfile" name="myfile" type="file"/>
+        <input type="submit" value="保存"/>
+	</form>
+
+{{template "default/footer.html".}}
